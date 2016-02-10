@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/brentjanderson/rosemary.svg?branch=master)](https://travis-ci.org/brentjanderson/rosemary)
+
 Rosemary is an open source personal finance application that includes the
 following features:
 
