@@ -1,24 +1,20 @@
 // Write your package code here!
-import { FlowRouter } from 'meteor/kadira:flow-router';
-import { mount } from 'react-mounter';
-import { MainLayout } from 'meteor/core-layouts';
+import {FlowRouter} from 'meteor/kadira:flow-router';
+import {mount} from 'react-mounter';
+import {CoreLayout} from 'meteor/core-layouts';
+
 
 FlowRouter.notFound = {
-    action: function() {
-      mount(MainLayout, {
-        content: (<NotFound />)
-      });
-    }
+  action() {
+    mount(CoreLayout, {content: (<NotFound/>)});
+  }
 };
 
-FlowRouter.route('/', {
-  action() {
-    mount(MainLayout, {
-      // content: (<OneColumnLayout mainContent=<IndexView />)
-    });
-  }
-});
+const AppRouter = FlowRouter.group({prefix: '/app', name: 'app'});
 
 // Variables exported by this module can be imported by other packages and
 // applications. See core-routes-tests.js for an example of importing.
 export const name = 'core-routes';
+export default {
+  AppRouter
+};

@@ -7,14 +7,14 @@ class MainLayout extends React.Component {
   render() {
     return (
       <div>
-        <h1>Main Layout</h1>
+        {this.props.content}
       </div>
     );
   }
 }
 
 MainLayout.defaultProps = {
-  content: 'PropValue'
+  content: ''
 };
 
 export { MainLayout };

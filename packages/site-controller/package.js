@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'core-layouts',
+  name: 'site-controller',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -10,20 +10,16 @@ Package.describe({
   documentation: 'README.md'
 });
 
-Npm.depends({
-  react: '0.14.7'
-});
-
 Package.onUse(function (api) {
   api.versionsFrom('1.3-modules-beta.8');
-  api.use([ 'ecmascript' ]);
-  api.addFiles([ 'CoreLayout.jsx' ], 'client');
-  api.mainModule('core-layouts.jsx', 'client');
+  api.use('ecmascript');
+  api.addFiles('routes.jsx', [ 'client', 'server' ]);
+  api.mainModule('site-controller.js');
 });
 
 Package.onTest(function (api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('core-layouts');
-  api.mainModule('core-layouts-tests.js');
+  api.use('site-controller');
+  api.mainModule('site-controller-tests.js');
 });

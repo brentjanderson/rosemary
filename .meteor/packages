@@ -21,3 +21,5 @@ core-layouts
 core-routes
 core-widgets
 controller-base
+auth-controller
+site-controller
