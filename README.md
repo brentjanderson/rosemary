@@ -1,27 +1,24 @@
-## A Sample Blog App Written in Mantra
+[![Build Status](https://travis-ci.org/brentjanderson/rosemary.svg?branch=master)](https://travis-ci.org/brentjanderson/rosemary)
 
-This is a sample blog app written in [Mantra](https://github.com/kadirahq/mantra) covering core features of it.
+Rosemary is an open source personal finance application that includes the
+following features:
 
-### Setting Up
+- [ ] Secure account import from a variety of financial institutions
+- [ ] Easy to use, intuitive budgeting, including savings goals
+- [ ] Search, tag, and filter transactions
+- [ ] Charts and graphs of all spending history
+- [ ] Rich GraphQL API for Mobile Applications
+- [ ] Supports multi-user access for households
+- [ ] Supports alerts via SMS with [Twilio](https://www.twilio.com)
+- [ ] Built on the [Plaid API](https://www.plaid.com)
+- [x] Built with [Meteor](https://www.meteor.com)
+- [x] Built with Meteor 1.3 and MantraJS
 
-* Clone this repo
-* Do `npm install` to install dependencies
-* Make sure you've installed Meteor locally
+# Contributing
+Pull Requests are welcome! This is a hobby project, and as such attention will
+be given to it on an as-needed basis.
 
-### Running The App
-
-Simply start your app with `meteor -p 5005`. 
-Then you can access the app on <http://localhost:5005>
-
-### Running Tests
-
-In this app, every part of the client side is fully tested using the familiar tools like Mocha, Chai and Sinon.
-
-Run tests with:
-
-```
-npm test
-```
-
-**See package.json for more information about testing setup.**
-
+# License
+This project is licensed under the terms of the GNU General Public License
+version 3.0, found in LICENSE.md. Original copyright for the work held by
+[Brent Anderson](https://www.brentjanderson.com/).

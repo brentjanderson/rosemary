@@ -21,3 +21,6 @@ reactive-dict
 audit-argument-checks
 check
 random
+meteorhacks:kadira
+meteorhacks:kadira-profiler
+meteorhacks:cluster
